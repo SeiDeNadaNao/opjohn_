@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="alternate" scrollamount="30">
+        <marquee behavior="alternate" scrollamount="50" direction="down">
+            <img src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8ee758ff27524a57a62782d0224b0b29/default/light/1.0" alt="">
+        </marquee>
+    </marquee>
+
+    <button style="--clr:#ff1867" onclick="clicked()" id="button" ><span>Aqui NÂO</span><i></i></button>
+    <img src="./assets/Screenshot_2.png" alt="" id="img" style = ""hidden>
+</body>
+    <script>
+        function clicked() {
+            console.log("oi");
+            if(img == 1){
+                document.getElementById("img").style.display="inline";
+                document.getElementById("button").style.top="50%"
+                return img = 0;
+            } else {
+                document.getElementById("img").style.display="inline";
+                
+                document.getElementById("button").style.top="70%"
+                return img = 1;
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0814aa42095c4933a354f38699009cd8/default/light/1.0");
+    background-color: black;
+}
+
+marquee{
+    height: 100vh;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 40px 120px;
+    transition: 0.5s;
+    overflow: hidden;
+    clear: left;
+    z-index: 1;
+}
+
+#img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 800px;
+    width: 800px;
+    transform: translate(-50%, -50%);
+}
+
+button span{
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+button:hover{
+    letter-spacing: 0.25em;
+    color: var(--clr);
+    background: var(--clr);
+    
+    box-shadow: 0 0 35px var(--clr);
+}
+
+
+button:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+button i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+button i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 25px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+button:hover i::before{
+    width: 45px;
+    left: 20%;
+}
+
+button i::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 25px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+button:hover i::after{
+    width: 45px;
+    left: 80%;
+}
+
+img{
+    height: 150px;
+    width: 250px;
+    border-radius: 50%;
+}
